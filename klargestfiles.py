@@ -2,6 +2,9 @@
 # Since: 14/12/2019
 # Last Modified: 14/12/2019
 
+#TODO: Search sub-directories in the folder provided
+# to achieve maximum functionality
+
 import sys
 import os
 
