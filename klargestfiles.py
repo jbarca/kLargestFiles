@@ -16,6 +16,11 @@ def main():
         get_largest_files(sys.argv[1], int(sys.argv[2]))
 
 def get_largest_files(directory, k):
+    # Check if directory is valid
+    if not os.path.isdir(directory):
+        print("Invalid directory specified. Quitting.")
+        return
+
     files = []
     # Get all files in directory
     for f in os.listdir(directory):
